@@ -1,0 +1,77 @@
+*{
+    font-family: "Press Start 2p";
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+}
+.container{
+   
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container  .ring{
+    position: initial;
+    width: 100px;
+    height: 100px;
+    margin: -30px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    border: 4px solid transparent;
+   border-top: 1px snow #24ecff;
+   animation:  animate 0.4s linear infinite;
+
+}
+@keyframes animate{
+    0%
+    {
+        transform:  rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.container .ring::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #24ecff;
+    box-shadow:  0 0 0 100px #24ecff33;
+    
+    
+}
+
+
+
+.container .ring:nth-child(3){
+    color: #ffa202;
+    
+    top:  -66.66;
+
+
+}
+.container p{
+    
+   margin-left: -222px;
+    
+    color: rgb(1, 255, 242);
+    font-size: 2em;
+    bottom: -80px;
+    letter-spacing: 0.2em;
+}
